@@ -6,7 +6,7 @@ from datetime import datetime
 DISCORD_WEBHOOK_URL = 'your_webhook_url'
 
 def fetch_gas_price():
-    # Replace 'vendor_page_url' with the URL of the page you want to scrape
+    # Replace 'vendor_page_url' with the URL of the page you want to gather info from. make sure you have permission
     url = 'vendor_page_url'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
