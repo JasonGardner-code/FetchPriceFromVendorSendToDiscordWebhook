@@ -1,0 +1,14 @@
+### Automate Script Execution ###
+To run this script daily at 7 AM, you can use a task scheduler:
+
+Linux/macOS: Use cron jobs.
+Windows: Use Task Scheduler.
+Example of a cron job (Linux/macOS):
+
+Open the terminal.
+Type crontab -e to edit the cron jobs.
+Add the following line to run the script at 7 AM every day, adjusting the path to where your script is stored:
+
+0 7 * * * /usr/bin/python3 /path/to/your_script.py
+
+Save and exit the editor.
